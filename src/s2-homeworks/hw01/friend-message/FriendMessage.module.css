@@ -1,31 +1,64 @@
 .friendMessage {
-
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .friendImageAndText {
-
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    max-width: 75%;
 }
 
 .friendImageAndText img {
-
+    flex: 0 0 48px;
+    height: 48px;
 }
 
 .friendText {
-
+    background-color: #F5F7FB;
+    border-radius: 8px;
+    padding: 8px 14px;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
 }
 
 .friendText:after {
-
+    content: '';
+    position: absolute;
+    left: -12px; /* Или 'right: 100%;', если треугольник должен быть с другой стороны */
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 17px solid #F5F7FB; /* Цвет должен совпадать с фоном сообщения */
+    border-top: 17px solid transparent;
+    border-bottom: 0 solid transparent;
 }
 
 .friendName {
-
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .friendMessageText {
-
+    white-space: pre-wrap;
+    font-size: 16px;
 }
 
 .friendTime {
+    padding-left: 12px;
+    font-size: 10px;
+    font-weight: 600;
+}
 
+
+@media (max-width: 760px) {
+    .friendImageAndText {
+
+        max-width: 100%;
+    }
 }

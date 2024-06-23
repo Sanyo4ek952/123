@@ -5,6 +5,7 @@ import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
 
+
 /*
 * 1 - описать тип MessageType
 * 2 - описать тип MessagePropsType в файле Message.tsx
@@ -14,7 +15,19 @@ import avatar from './avatar.png'
 * */
 
 // нужно создать правильный тип вместо any
-export type MessageType = any
+export type MessageType = {
+    id:number
+    user: UserType
+    message: MessageItemType
+}
+ export type UserType = {
+    avatar: string
+     name: string
+}
+export type MessageItemType = {
+    text:string
+    time:string
+}
 
 // структуру объекта не менять
 export const message0: MessageType = {
@@ -35,7 +48,7 @@ export const friendMessage0: MessageType = {
         name: 'Friend Name', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
+        text: 'зеркальное сообщение для тренировки css ', // можно менять
         time: '22:00', // можно менять
     },
 }

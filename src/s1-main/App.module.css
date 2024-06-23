@@ -1,5 +1,6 @@
 .App {
     --header_height: 60px;
+    padding: 50px 70px;
 }
 
 .hw {
@@ -7,5 +8,14 @@
 }
 
 .hwTitle {
+    font-size: 22px;
+    font-weight: 600;
+}
 
+
+@media (max-width: 760px) {
+    .App {
+
+        padding: 20px 15px;
+    }
 }

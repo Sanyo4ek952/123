@@ -1,31 +1,68 @@
 .message {
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 30px;
 }
 
 .imageAndText {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 12px;
+    max-width: 75%;
 
 }
 
 .imageAndText img {
-
+    flex: 0 0 48px;
+    height: 48px;
 }
 
 .text {
-
+    background-color: #0066cc;
+    color: white;
+    text-align: right;
+    border-radius: 8px;
+    padding: 8px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
 }
 
 .text:after {
-
+    content: '';
+    position: absolute;
+    right: -12px; /* Или 'right: 100%;', если треугольник должен быть с другой стороны */
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 17px solid #0066cc; /* Цвет должен совпадать с фоном сообщения */
+    border-top: 17px solid transparent;
+    border-bottom: 0 solid transparent;
 }
 
 .name {
-
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .messageText {
+    white-space: pre-wrap;
+    font-size: 16px;
 
 }
 
 .time {
+    padding-right: 12px;
+    font-size: 10px;
+    font-weight: 600;
+}
 
+@media (max-width: 760px) {
+    .imageAndText {
+
+        max-width: 100%;
+    }
 }
