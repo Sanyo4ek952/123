@@ -1,16 +1,25 @@
 .button {
+padding: 8px 20px;
 }
 
 .disabled {
+    background-color: #CC1439;
+    color: white;
 }
 
 .secondary {
+    background-color: #CC1439;
+    color: white;
 }
 
 .default {
+    background-color: #0066CC;
+    color: white;
 }
 
 .red {
+    background-color: #CC1439;
+    color: white;
 }
 
 .default:hover {
@@ -33,4 +42,18 @@
 }
 
 .button:disabled {
+}
+
+
+.button{
+
+}
+.buttonRed{
+
+}
+.buttonDisabled{
+
+}
+.buttonSecondary{
+
 }
